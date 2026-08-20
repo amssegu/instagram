@@ -1,0 +1,1448 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7777536386845474"
+     crossorigin="anonymous"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Instagram for Windows</title>
+
+<meta name="description" content="Stay connected from your computer with the Instagram desktop experience for Windows. Download useful mobile and desktop apps including Instagram and other popular applications.">
+
+<style>
+
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  padding:0;
+  background:#f4f6f8;
+  font-family:Arial,Helvetica,sans-serif;
+  color:#111;
+}
+
+
+/* =====================================================
+   MAIN WRAPPER
+===================================================== */
+
+.apps-wrapper{
+  width:100%;
+  max-width:1250px;
+  margin:auto;
+  padding:18px 15px 50px;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.apps-header{
+  background:linear-gradient(135deg,#111,#292929);
+  color:#fff;
+  padding:30px 20px;
+  border-radius:18px;
+  margin-bottom:22px;
+  text-align:center;
+  box-shadow:0 7px 25px rgba(0,0,0,.12);
+}
+
+.apps-header h1{
+  margin:0 0 8px;
+  font-size:32px;
+  font-weight:800;
+}
+
+.apps-header p{
+  margin:0;
+  color:#d8d8d8;
+  font-size:15px;
+}
+
+
+/* =====================================================
+   TWO COLUMN AREA
+===================================================== */
+
+.apps-main-layout{
+  display:grid;
+  grid-template-columns:minmax(280px,390px) minmax(0,1fr);
+  gap:22px;
+  align-items:start;
+}
+
+
+/* =====================================================
+   BLOG PANEL
+===================================================== */
+
+.apps-blog{
+  background:#fff;
+  border-radius:18px;
+  padding:22px;
+  box-shadow:0 5px 20px rgba(0,0,0,.07);
+  position:sticky;
+  top:18px;
+  overflow:hidden;
+}
+
+.blog-label{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  background:#f1f3f5;
+  color:#111;
+  padding:7px 11px;
+  border-radius:50px;
+  font-size:11px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.5px;
+  margin-bottom:14px;
+}
+
+.apps-blog h2{
+  margin:0 0 10px;
+  font-size:24px;
+  line-height:1.25;
+  font-weight:800;
+}
+
+.apps-blog .blog-intro{
+  margin:0 0 18px;
+  color:#666;
+  font-size:14px;
+  line-height:1.65;
+}
+
+.apps-blog h3{
+  margin:20px 0 10px;
+  font-size:17px;
+}
+
+.apps-blog p{
+  margin:0 0 12px;
+  color:#555;
+  font-size:14px;
+  line-height:1.65;
+}
+
+.apps-blog ul{
+  margin:8px 0 18px;
+  padding-left:19px;
+}
+
+.apps-blog li{
+  color:#555;
+  font-size:13px;
+  line-height:1.6;
+  margin-bottom:6px;
+}
+
+
+/* =====================================================
+   APP INFO BOX
+===================================================== */
+
+.app-info{
+  background:#f6f7f8;
+  border-radius:12px;
+  padding:13px;
+  margin-top:16px;
+}
+
+.app-info-row{
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  padding:7px 0;
+  border-bottom:1px solid #e4e6e8;
+  font-size:12px;
+}
+
+.app-info-row:last-child{
+  border-bottom:0;
+}
+
+.app-info-label{
+  color:#777;
+}
+
+.app-info-value{
+  font-weight:700;
+  color:#222;
+  text-align:right;
+}
+
+
+/* =====================================================
+   BLOG DOWNLOAD BUTTON
+===================================================== */
+
+.blog-download{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  min-height:52px;
+  margin-top:16px;
+  background:#111;
+  color:#fff;
+  text-decoration:none;
+  border-radius:11px;
+  font-size:14px;
+  font-weight:800;
+  transition:.2s ease;
+}
+
+.blog-download:hover{
+  background:#e50914;
+  transform:translateY(-2px);
+}
+
+
+/* =====================================================
+   FEED AREA
+===================================================== */
+
+.apps-feed-area{
+  min-width:0;
+}
+
+.feed-heading{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin:0 0 14px;
+}
+
+.feed-heading h2{
+  margin:0;
+  font-size:21px;
+  font-weight:800;
+}
+
+.feed-count{
+  background:#fff;
+  padding:7px 11px;
+  border-radius:50px;
+  font-size:11px;
+  color:#666;
+  box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+
+/* =====================================================
+   APP GRID
+===================================================== */
+
+#appsGrid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+}
+
+
+/* =====================================================
+   APP CARD
+===================================================== */
+
+.app-card{
+  background:#fff;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 4px 15px rgba(0,0,0,.07);
+  transition:.25s ease;
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+}
+
+.app-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+
+/* =====================================================
+   APP IMAGE
+===================================================== */
+
+.app-image{
+  width:100%;
+  height:150px;
+  overflow:hidden;
+  background:#e9ecef;
+}
+
+.app-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:.3s ease;
+}
+
+.app-card:hover .app-image img{
+  transform:scale(1.04);
+}
+
+
+/* =====================================================
+   APP CONTENT
+===================================================== */
+
+.app-content{
+  padding:14px;
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+
+.app-title{
+  margin:0 0 7px;
+  font-size:16px;
+  line-height:1.3;
+  font-weight:800;
+}
+
+.app-description{
+  font-size:12px;
+  line-height:1.55;
+  color:#666;
+  margin:0 0 14px;
+  flex:1;
+}
+
+
+/* =====================================================
+   DOWNLOAD BUTTON
+===================================================== */
+
+.download-btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  min-height:48px;
+  text-align:center;
+  text-decoration:none;
+  background:#111;
+  color:#fff;
+  padding:11px 8px;
+  border-radius:9px;
+  font-size:13px;
+  font-weight:800;
+  transition:.2s ease;
+}
+
+.download-btn:hover{
+  background:#e50914;
+  color:#fff;
+  transform:translateY(-2px);
+}
+
+.download-icon{
+  font-size:18px;
+  margin-right:7px;
+}
+
+
+/* =====================================================
+   LOAD MORE
+===================================================== */
+
+.load-more-area{
+  text-align:center;
+  margin:22px 0 0;
+}
+
+#loadMoreBtn{
+  border:0;
+  background:#111;
+  color:#fff;
+  padding:14px 25px;
+  border-radius:10px;
+  cursor:pointer;
+  font-size:13px;
+  font-weight:800;
+  transition:.2s ease;
+}
+
+#loadMoreBtn:hover{
+  background:#e50914;
+  transform:translateY(-2px);
+}
+
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.loading-box{
+  grid-column:1/-1;
+  text-align:center;
+  padding:50px 20px;
+  color:#666;
+  background:#fff;
+  border-radius:15px;
+}
+
+.loading-spinner{
+  width:38px;
+  height:38px;
+  border:4px solid #ddd;
+  border-top-color:#111;
+  border-radius:50%;
+  animation:spin .8s linear infinite;
+  margin:0 auto 15px;
+}
+
+@keyframes spin{
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+
+/* =====================================================
+   NO RESULTS
+===================================================== */
+
+.no-results{
+  grid-column:1/-1;
+  text-align:center;
+  background:#fff;
+  padding:40px 20px;
+  border-radius:12px;
+  color:#666;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media(max-width:900px){
+
+  .apps-main-layout{
+    grid-template-columns:300px minmax(0,1fr);
+    gap:16px;
+  }
+
+  #appsGrid{
+    grid-template-columns:1fr;
+  }
+
+  .app-image{
+    height:145px;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:700px){
+
+  .apps-wrapper{
+    padding:10px 10px 35px;
+  }
+
+  .apps-header{
+    padding:24px 15px;
+    border-radius:15px;
+    margin-bottom:15px;
+  }
+
+  .apps-header h1{
+    font-size:24px;
+  }
+
+  .apps-header p{
+    font-size:13px;
+  }
+
+  .apps-main-layout{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+  }
+
+  .apps-blog{
+    position:relative;
+    top:auto;
+    width:100%;
+    padding:18px;
+    border-radius:15px;
+  }
+
+  .apps-blog h2{
+    font-size:21px;
+  }
+
+  .apps-blog .blog-intro,
+  .apps-blog p{
+    font-size:13px;
+  }
+
+  .apps-blog h3{
+    font-size:16px;
+  }
+
+  .apps-blog li{
+    font-size:12px;
+  }
+
+  .apps-feed-area{
+    width:100%;
+  }
+
+  .feed-heading{
+    margin-bottom:11px;
+  }
+
+  .feed-heading h2{
+    font-size:19px;
+  }
+
+  #appsGrid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:11px;
+  }
+
+  .app-image{
+    height:135px;
+  }
+
+  .app-content{
+    padding:11px;
+  }
+
+  .app-title{
+    font-size:14px;
+  }
+
+  .app-description{
+    font-size:11px;
+    line-height:1.5;
+  }
+
+  .download-btn{
+    min-height:48px;
+    font-size:12px;
+  }
+
+}
+
+
+/* =====================================================
+   SMALL PHONES
+===================================================== */
+
+@media(max-width:430px){
+
+  .apps-header h1{
+    font-size:22px;
+  }
+
+  #appsGrid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .app-image{
+    height:125px;
+  }
+
+  .app-title{
+    font-size:13px;
+  }
+
+  .app-description{
+    font-size:11px;
+  }
+
+  .download-btn{
+    min-height:46px;
+    font-size:11px;
+  }
+
+  .download-icon{
+    font-size:16px;
+  }
+
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+===================================================== */
+
+@media(max-width:340px){
+
+  #appsGrid{
+    grid-template-columns:1fr;
+  }
+
+  .app-image{
+    height:180px;
+  }
+
+  .app-title{
+    font-size:16px;
+  }
+
+  .app-description{
+    font-size:12px;
+  }
+
+  .download-btn{
+    font-size:13px;
+  }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<div class="apps-wrapper">
+
+
+  <!-- =================================================
+       HEADER
+  ================================================== -->
+
+  <header class="apps-header">
+
+    <h1>📱 Apps Download Center</h1>
+
+    <p>
+      Discover useful apps here @ssegu apps.
+    </p>
+
+  </header>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7777536386845474"
+     crossorigin="anonymous"></script>
+<!-- Vertical -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7777536386845474"
+     data-ad-slot="9970802556"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+  <!-- =================================================
+       TWO COLUMN LAYOUT
+  ================================================== -->
+
+  <div class="apps-main-layout">
+
+
+    <!-- =================================================
+         SHORT BLOG POST
+    ================================================== -->
+
+    <article class="apps-blog">
+
+      <div class="blog-label">
+        📖 App Guide
+      </div>
+
+      <h2>
+        Instagram for Windows
+      </h2>
+
+      <p class="blog-intro">
+        Instagram remains one of the most influential social platforms globally, with over two billion users sharing         photos, videos, and daily life. At its heart, the app is built for visual storytelling—offering a space to follow         friends, discover niche communities, and engage with cultural trends in real time. Whether you're an aspiring         creator or a casual scroller, Instagram shapes how we consume and curate imagery online.
+      </p>
+
+      <p>
+        Unlike a full-fledged native application, Instagram’s PC version is a Progressive Web App (PWA)—essentially a         browser wrapper that mirrors the mobile site. This makes it quick to install and lightweight, but it comes with         notable trade-offs. On desktop, you can still upload feed posts, view Stories, watch Reels, and send direct         messages via the integrated Messenger chat. The Explore page is also accessible, though its algorithmic         recommendations can feel less fluid and responsive than on mobile.
+      </p>
+
+      <p>
+        The creative gap between mobile and desktop is significant. Advanced editing features—like interactive stickers,         audio mixing, Reels templates, and AR filters—are absent. Video uploads are stripped of most post-production tools,         meaning you can’t apply the same effects or timing edits available on your phone. For creators who rely on                  Instagram’s editing suite, the desktop version serves more as a viewing and light-interaction tool than a                   production hub.
+      </p>
+
+      <p>
+        Despite these shortcomings, the PC app holds value for specific use cases. It’s ideal for multitasking—keeping an           eye on notifications while working, browsing longer-form content on a larger screen, or managing DMs with a                 physical keyboard. It also offers a cleaner, less cluttered interface for those who find the mobile app                     overwhelming. However, if your goal is content creation or immersive discovery, you’ll likely want to keep your             phone nearby.
+      </p>
+
+      <p>
+        Instagram’s desktop PWA is a practical companion, not a replacement. It bridges the gap for users who prefer a         bigger display and keyboard input, but it deliberately holds back advanced tools to preserve the mobile-first         nature of the platform. For now, it remains a handy sidekick—useful for staying in the loop, but not for making         your mark.
+      </p>
+
+      <h3>
+        Why use Instagram on Windows?
+      </h3>
+
+      <ul>
+
+        <li>
+          Use Instagram directly from your computer.
+        </li>
+
+        <li>
+          Continue conversations without switching devices.
+        </li>
+
+        <li>
+          Communicate with your contacts from your desktop.
+        </li>
+
+        <li>
+          Useful for work, study and everyday messaging.
+        </li>
+
+        <li>
+          Available as a free communication application.
+        </li>
+
+      </ul>
+
+
+      <!-- APP INFORMATION -->
+
+      <div class="app-info">
+
+        <div class="app-info-row">
+
+          <span class="app-info-label">
+            App
+          </span>
+
+          <span class="app-info-value">
+            WhatsApp
+          </span>
+
+        </div>
+
+
+        <div class="app-info-row">
+
+          <span class="app-info-label">
+            Platform
+          </span>
+
+          <span class="app-info-value">
+            Windows
+          </span>
+
+        </div>
+
+
+        <div class="app-info-row">
+
+          <span class="app-info-label">
+            Category
+          </span>
+
+          <span class="app-info-value">
+            Communication
+          </span>
+
+        </div>
+
+
+        <div class="app-info-row">
+
+          <span class="app-info-label">
+            Price
+          </span>
+
+          <span class="app-info-value">
+            Free
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <a
+  href="https://www.ssegu.com/"
+  class="blog-download"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  ⬇ DOWNLOAD INSTAGRAM FOR WINDOWS
+</a>
+
+
+
+      <a
+  href="https://www.ssegu.com/"
+  class="blog-download"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  ⬇ DOWNLOAD INSTAGRAM FOR ANDRIOD
+</a>
+    
+     </article>
+
+
+
+    <!-- =================================================
+         APP FEED
+    ================================================== -->
+
+    <section class="apps-feed-area" id="apps">
+
+      <div class="feed-heading">
+
+        <h2>
+          Latest Apps
+        </h2>
+
+        <span class="feed-count">
+          Updated apps
+        </span>
+
+      </div>
+
+
+      <div id="appsGrid">
+
+        <div class="loading-box">
+
+          <div class="loading-spinner"></div>
+
+          Loading apps...
+
+        </div>
+
+      </div>
+
+
+      <div class="load-more-area">
+
+        <button id="loadMoreBtn">
+          LOAD MORE APPS
+        </button>
+
+      </div>
+
+    </section>
+
+  </div>
+
+</div>
+
+
+
+<script>
+
+/* =====================================================
+   APPS FEED
+===================================================== */
+
+var allApps = [];
+
+var currentIndex = 0;
+
+var batchSize = 12;
+
+
+/* =====================================================
+   BLOGGER JSONP CALLBACK
+===================================================== */
+
+function handleAppsFeed(json){
+
+  try{
+
+    if(
+      json &&
+      json.feed &&
+      json.feed.entry
+    ){
+
+      json.feed.entry.forEach(function(entry){
+
+        var app =
+          normalizeApp(entry);
+
+        if(app){
+
+          allApps.push(app);
+
+        }
+
+      });
+
+    }
+
+
+    /* Newest apps first */
+
+    allApps.sort(function(a,b){
+
+      return b.date - a.date;
+
+    });
+
+
+    renderApps(true);
+
+  }
+
+  catch(error){
+
+    console.error(
+      "Apps feed error:",
+      error
+    );
+
+    showError();
+
+  }
+
+}
+
+
+/* =====================================================
+   NORMALIZE BLOGGER POST
+===================================================== */
+
+function normalizeApp(entry){
+
+  if(!entry){
+    return null;
+  }
+
+
+  /* TITLE */
+
+  var title =
+    entry.title &&
+    entry.title.$t
+      ? entry.title.$t
+      : "Untitled App";
+
+
+  /* URL */
+
+  var url = "#";
+
+
+  if(entry.link){
+
+    for(
+      var i=0;
+      i<entry.link.length;
+      i++
+    ){
+
+      if(
+        entry.link[i].rel ===
+        "alternate"
+      ){
+
+        url =
+          entry.link[i].href;
+
+        break;
+
+      }
+
+    }
+
+  }
+
+
+  /* IMAGE */
+
+  var image =
+    "https://via.placeholder.com/640x400?text=APP";
+
+
+  if(
+    entry.media$thumbnail &&
+    entry.media$thumbnail.url
+  ){
+
+    image =
+      entry.media$thumbnail.url
+        .replace(
+          "/s72-c/",
+          "/s640/"
+        );
+
+  }
+
+  else if(
+    entry.content &&
+    entry.content.$t
+  ){
+
+    var match =
+      entry.content.$t.match(
+        /<img[^>]+src=["']([^"']+)["']/i
+      );
+
+    if(match){
+
+      image =
+        match[1];
+
+    }
+
+  }
+
+
+  /* DESCRIPTION */
+
+  var description = "";
+
+
+  if(
+    entry.summary &&
+    entry.summary.$t
+  ){
+
+    description =
+      entry.summary.$t;
+
+  }
+
+  else if(
+    entry.content &&
+    entry.content.$t
+  ){
+
+    description =
+      entry.content.$t;
+
+  }
+
+
+  description =
+    cleanDescription(
+      description
+    );
+
+
+  /* DATE */
+
+  var date =
+    new Date(
+      entry.published &&
+      entry.published.$t
+        ? entry.published.$t
+        : "2000-01-01"
+    );
+
+
+  return {
+
+    title:title,
+
+    url:url,
+
+    image:image,
+
+    description:description,
+
+    date:date
+
+  };
+
+}
+
+
+/* =====================================================
+   CLEAN DESCRIPTION
+===================================================== */
+
+function cleanDescription(text){
+
+  if(!text){
+
+    return "Learn more about this app and access its download option.";
+
+  }
+
+
+  var div =
+    document.createElement("div");
+
+  div.innerHTML =
+    text;
+
+
+  text =
+    div.textContent ||
+    div.innerText ||
+    "";
+
+
+  text =
+    text
+      .replace(/\s+/g," ")
+      .trim();
+
+
+  if(text.length > 155){
+
+    text =
+      text.substring(0,155)
+      .trim() + "...";
+
+  }
+
+
+  if(!text){
+
+    text =
+      "Learn more about this app and access its download option.";
+
+  }
+
+
+  return text;
+
+}
+
+
+/* =====================================================
+   ESCAPE HTML
+===================================================== */
+
+function escapeHTML(text){
+
+  var div =
+    document.createElement("div");
+
+  div.textContent =
+    text || "";
+
+  return div.innerHTML;
+
+}
+
+
+/* =====================================================
+   RENDER APPS
+===================================================== */
+
+function renderApps(reset){
+
+  var container =
+    document.getElementById(
+      "appsGrid"
+    );
+
+
+  if(reset){
+
+    currentIndex = 0;
+
+    container.innerHTML = "";
+
+  }
+
+
+  var next =
+    allApps.slice(
+      currentIndex,
+      currentIndex + batchSize
+    );
+
+
+  if(
+    reset &&
+    next.length === 0
+  ){
+
+    container.innerHTML =
+      '<div class="no-results">' +
+      'No apps are currently available.' +
+      '</div>';
+
+
+    document.getElementById(
+      "loadMoreBtn"
+    ).style.display =
+      "none";
+
+
+    return;
+
+  }
+
+
+  next.forEach(function(app){
+
+    createAppCard(app);
+
+  });
+
+
+  currentIndex +=
+    next.length;
+
+
+  updateLoadMore();
+
+}
+
+
+/* =====================================================
+   APP CARD
+===================================================== */
+
+function createAppCard(app){
+
+  var container =
+    document.getElementById(
+      "appsGrid"
+    );
+
+
+  var card =
+    document.createElement(
+      "article"
+    );
+
+
+  card.className =
+    "app-card";
+
+
+  card.innerHTML =
+
+    '<div class="app-image">' +
+
+      '<img ' +
+
+        'src="' +
+        escapeHTML(app.image) +
+        '" ' +
+
+        'alt="' +
+        escapeHTML(app.title) +
+        '" ' +
+
+        'loading="lazy" ' +
+
+        'onerror="this.src=\'https://via.placeholder.com/640x400?text=APP\'"' +
+
+      '>' +
+
+    '</div>' +
+
+
+    '<div class="app-content">' +
+
+      '<h2 class="app-title">' +
+
+        escapeHTML(
+          app.title
+        ) +
+
+      '</h2>' +
+
+
+      '<p class="app-description">' +
+
+        escapeHTML(
+          app.description
+        ) +
+
+      '</p>' +
+
+
+      '<a ' +
+
+        'href="' +
+        escapeHTML(app.url) +
+        '" ' +
+
+        'class="download-btn" ' +
+
+        'target="_blank" ' +
+
+        'rel="noopener noreferrer"' +
+
+      '>' +
+
+        '<span class="download-icon">⬇</span>' +
+
+        'DOWNLOAD APP' +
+
+      '</a>' +
+
+    '</div>';
+
+
+  container.appendChild(
+    card
+  );
+
+}
+
+
+/* =====================================================
+   LOAD MORE
+===================================================== */
+
+function updateLoadMore(){
+
+  var button =
+    document.getElementById(
+      "loadMoreBtn"
+    );
+
+
+  if(
+    currentIndex >=
+    allApps.length
+  ){
+
+    button.style.display =
+      "none";
+
+  }
+
+  else{
+
+    button.style.display =
+      "inline-block";
+
+  }
+
+}
+
+
+document
+  .getElementById(
+    "loadMoreBtn"
+  )
+  .addEventListener(
+    "click",
+    function(){
+
+      renderApps(false);
+
+    }
+  );
+
+
+/* =====================================================
+   ERROR
+===================================================== */
+
+function showError(){
+
+  document.getElementById(
+    "appsGrid"
+  ).innerHTML =
+
+    '<div class="no-results">' +
+
+      '<strong>Unable to load apps.</strong>' +
+
+      '<br><br>' +
+
+      'Please refresh the page and try again.' +
+
+    '</div>';
+
+
+  document.getElementById(
+    "loadMoreBtn"
+  ).style.display =
+    "none";
+
+}
+
+
+/* =====================================================
+   LOAD BLOGGER "APPS" LABEL
+===================================================== */
+
+var appsFeedScript =
+  document.createElement(
+    "script"
+  );
+
+
+appsFeedScript.src =
+  "https://www.ssegu.com/" +
+  "feeds/posts/default/-/apps" +
+  "?alt=json-in-script" +
+  "&max-results=150" +
+  "&callback=handleAppsFeed";
+
+
+appsFeedScript.onerror =
+  showError;
+
+
+document.body.appendChild(
+  appsFeedScript
+);
+
+</script>
+
+ <div class='mobile-hub'>
+
+    
+  <div id='siteFooter' style='background:#111; text-align:center; padding:10px 0; font-family:Raleway, Arial, sans-serif;'>
+
+    <a href='/' rel='noopener noreferrer' style='color:#04ff00; margin:0 6px; text-decoration:none;'>Home</a>
+    <span style='color:#fff;'>|</span>
+    
+    <a href='https://www.ssegu.com/p/contact-us.html' rel='noopener noreferrer' style='color:#04ff00; margin:0 6px; text-decoration:none;'>Contact</a>
+    <span style='color:#fff;'>|</span>
+    
+    <a href='https://www.ssegu.com/p/privacy-policy.html' rel='noopener noreferrer' style='color:#04ff00; margin:0 6px; text-decoration:none;' target='_blank'>Privacy</a>
+    <span style='color:#fff;'>|</span>
+    
+    <a href='https://www.ssegu.com/p/advertiser-disclosure.html' rel='noopener noreferrer' style='color:#04ff00; margin:0 6px; text-decoration:none;' target='_blank'>Disclosure</a>
+    <span style='color:#fff;'>|</span>
+    
+    <a href='https://www.ssegu.com/p/terms-and-conditions.html' rel='noopener noreferrer' style='color:#04ff00; margin:0 6px; text-decoration:none;' target='_blank'>Terms</a>
+  
+    <p style='color:#aaa; font-size:14px; margin:10px 0 0;'>
+      &#169; Apps @ ssegu. All rights reserved.
+    </p>
+
+</div>
+
+<script>
+(function() {
+  // If page is inside an iframe &#8594; hide footer
+  if (window.self !== window.top) {
+    var footer = document.getElementById(&quot;siteFooter&quot;);
+    if (footer) footer.style.display = &quot;none&quot;;
+  }
+})();
+</script>
+
+</body>
+</html>
